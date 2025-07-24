@@ -6,7 +6,7 @@ def connect():
         password="Asdel1-Asdel1"
         )
         mycursor = mydb.cursor()
-        mycursor.execute("CREATE DATEBASE IF NOT EXISTS alx_book_store")
+        mycursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
         print("Database alx_book_store created successfully!")
     except mysql.connector.Error :
         print(f"error : {mysql.connector.Error}")
